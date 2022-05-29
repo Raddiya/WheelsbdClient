@@ -49,7 +49,7 @@ const ManageUser = () => {
                                 <td attr='Email'>{user.email}</td>
                                 <td attr='Role'> {user.role ? user.role : 'User'}</td>
                                 <td attr='Action'>
-                                    <button onClick={() => deleteHandler(user._id)} className='btn btn-danger'>
+                                    <button onClick={() => deleteHandler(user._id)} className='btn btn-danger'>Delete
                                     </button>
                                     <button onClick={() => adminHandler(user._id)} className='btn btn-info'>
                                         MakeAdmin

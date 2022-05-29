@@ -24,6 +24,7 @@ import ManageUser from './Components/ManageUser/ManageUser';
 import ManageAllOrders from './Components/ManageAllOrders/ManageAllOrders';
 import Profile from './Components/Profile/Profile';
 import Review from './Components/Review/Review';
+import Portfolio from './Components/Portfolio/Portfolio';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home />} ></Route>
+        <Route path='/portfolio' element={<Portfolio />} ></Route>
         <Route path='/login' element={<Login />} ></Route>
         <Route path='/signup' element={<Signup />} ></Route>
         <Route path='/product' element={<Product />} ></Route>

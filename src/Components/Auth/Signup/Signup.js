@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import auth from "../../../Firebase/firebase.init";
+import axios from 'axios';
 
 const Signup = () => {
 
@@ -38,9 +39,22 @@ else{
 
     useEffect(() => {
         if (user) {
-            navigate(from);
+          axios.post('/jwt-generator', {  email: user.user.email})
+            .then(res => {
+              localStorage.setItem('token', res.data)
+              axios.put("/user", {
+                email: user.user.email 
+              })
+                .then(res => {
+                  if (res.data) {
+                    navigate(from, { replace: true });
+    
+                  }
+                })
+            })
         }
-    }, [user]);
+      }, [user])
+
 
     return (
         <div className="login-container container">

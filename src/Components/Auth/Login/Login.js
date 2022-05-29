@@ -2,11 +2,9 @@ import { useEffect, useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-
 import './Login.css'
 import axios from "axios";
 import auth from "../../../Firebase/firebase.init";
-
 
 
 const Login = () => {
@@ -23,7 +21,42 @@ const Login = () => {
 
     const [signInWithEmail, user, loading, hookError] = useSignInWithEmailAndPassword(auth);
     const [signInWithGoogle, googleUser, loading2, googleError] = useSignInWithGoogle(auth);
+    useEffect(() => {
+        if (googleUser) {
+          const { email } = googleUser.user
+          axios.post('/jwt-generator', { email })
+            .then(res => {
+              localStorage.setItem('token', res.data)
+              axios.put("/user", {
+                email: email
+              })
+                .then(res => {
+                  if (res.data) {
+                    navigate(from, { replace: true });
+    
+                  }
+                })
+            })
+        }
+      }, [googleUser]);
 
+      useEffect(() => {
+        if (user) {
+          axios.post('/jwt-generator', {  email: userInfo.email})
+            .then(res => {
+              localStorage.setItem('token', res.data)
+              axios.put("/user", {
+                email: userInfo.email 
+              })
+                .then(res => {
+                  if (res.data) {
+                    navigate(from, { replace: true });
+    
+                  }
+                })
+            })
+        }
+      }, [user, userInfo.email])
 
     const handleEmailChange = (e) => {
         const emailRegex = /\S+@\S+\.\S+/;

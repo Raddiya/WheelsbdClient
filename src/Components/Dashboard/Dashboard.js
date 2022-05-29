@@ -5,8 +5,9 @@ import './Dashboard.css';
 
 const Dashboard = () => {
     const [user, setUser] = useState({})
+    console.log(user)
     useEffect(() => {
-        const token = localStorage.getItem('token')
+        const token = `barer ${localStorage.getItem('token')}`
         if (token) {
             axios.get('/jwt-decoded', {
                 headers: {
@@ -51,9 +52,7 @@ const Dashboard = () => {
                                 <NavLink className={({ isActive }) =>
                                     isActive ? "link-active link" : "link"
                                 } to='/dashboard/my_items'>My Order</NavLink>
- <NavLink className={({ isActive }) =>
-                                isActive ? "link-active link" : "link"
-                            } to='/dashboard/manageAllUser'>Manage All User</NavLink>
+
                             </>
                         )
                 }

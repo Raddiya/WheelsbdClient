@@ -4,6 +4,7 @@ import './Home.css';
 import axios from 'axios';
 import { Accordion, Spinner } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Minicycle from '../Minicycle/Minicycle';
 
 const Home = () => {
   const [services, setServices] = useState([]);
@@ -82,8 +83,13 @@ const Home = () => {
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
- 
-      
+
+      <div className='py-5'>
+        <div className='container'>
+          <Minicycle></Minicycle>
+        </div>
+      </div>
+
     </div>
 
 

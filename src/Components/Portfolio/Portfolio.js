@@ -1,7 +1,8 @@
 import React from 'react';
-import ownPic from '../../Image/download.jpg';
 import { ProgressBar } from 'react-bootstrap';
+import ownPic from '../../Image/my-pic.png';
 import './Portfolio.css';
+
 const Portfolio = () => {
     return (
         <div>
