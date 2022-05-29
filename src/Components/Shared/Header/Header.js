@@ -18,7 +18,7 @@ const Header = () => {
     <div>
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand as={Link} to="/"><h1>Phone site BD</h1></Navbar.Brand>
+          <Navbar.Brand as={Link} to="/"><h1>Wheels BD</h1></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">

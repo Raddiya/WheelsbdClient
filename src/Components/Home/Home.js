@@ -82,21 +82,8 @@ const Home = () => {
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
-      {/* <!-- Ques part end --> */}
-      <hr />
-
-      <div class="card text-center mt-5">
-
-        <div class="card-body">
-          <h5 class="card-title">For any kind of information contact Us</h5>
-          <p class="card-text">Email:psbd.bd@gmail.com</p>
-          <p class="card-text">Mirpur ,2,dhaka</p>
-        </div>
-        <div class="card-footer border-0">
-          +8801710854376
-        </div>
-      </div>
-
+ 
+      
     </div>
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import { faFacebook, faGithub, faGoogle, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faGithub, faGoogle, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Col, Row } from 'react-bootstrap';
 
@@ -11,7 +11,7 @@ const Footer = () => {
         <Row className='align-items-stretch'>
           <Col lg={4}>
             <div className="px-3 border-light border-end h-100">
-              <h1 className='word'><span className='text-light fst-italic'>bikes</span>online</h1>
+              <h1 className='word'><span className='text-light fst-italic'>Wheel</span>BD</h1>
               <p className='text-secondary py-2'>For other cycling related terms (besides parts) see Glossary of cycling.. List of bicycle parts by alphabetic order: . Axle: as in the generic definition, a rod that serves to attach a wheel to a bicycle and provides support for bearings on which the wheel rotates. </p>
             </div>
           </Col>
@@ -22,7 +22,6 @@ const Footer = () => {
                 <h5>All Services</h5>
                 <h5>Delivery</h5>
                 <h5>Shipping free</h5>
-                <h5>Logistic Service</h5>
                 <h5>Legal Notice</h5>
                 <h5>About Us</h5>
               </div>
