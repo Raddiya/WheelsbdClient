@@ -1,6 +1,7 @@
 import React from 'react';
 import ownPic from '../../Image/download.jpg';
 import { ProgressBar } from 'react-bootstrap';
+import './Portfolio.css';
 const Portfolio = () => {
     return (
         <div>
@@ -12,7 +13,7 @@ const Portfolio = () => {
                     <div className="col-lg-6">
                         <h3>Hi There</h3>
                         <h1>
-                            I am <span className="text-primary">Md Abbas Ali</span>
+                            I am <span className="text-primary">Raddiya Sultana.</span>
                         </h1>
                         <p>
                             I am Bangladeshi web designer and developer focused on Front End
