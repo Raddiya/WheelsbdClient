@@ -19,6 +19,7 @@ import Blog from './Components/Blog/Blog';
 import { Route, Routes } from 'react-router-dom';
 import Dashboard from './Components/Dashboard/Dashboard';
 import ManageUser from './Components/ManageUser/ManageUser';
+import ManageAllOrders from './Components/ManageAllOrders/ManageAllOrders';
 
 function App() {
   return (
