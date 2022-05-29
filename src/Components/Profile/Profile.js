@@ -2,6 +2,7 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../Firebase/Firebase.init';
 import myPic from '../../Image/download (2).jpg';
+import './Profile.css';
 
 const Profile = () => {
     const [user, loading] = useAuthState(auth)
