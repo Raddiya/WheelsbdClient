@@ -1,5 +1,5 @@
 import { useAuthState } from 'react-firebase-hooks/auth';
-import auth from '../../../Firebase/Firebase.init';
+import auth from '../../../Firebase/firebase.init';
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './Header.css'
@@ -23,13 +23,11 @@ const Header = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link as={NavLink} to="/">Home</Nav.Link>
-              <Nav.Link as={NavLink} to="/inventory">Inventory</Nav.Link>
+              <Nav.Link as={NavLink} to="/product">Product</Nav.Link>
               <Nav.Link as={NavLink} to="/blog">Blog</Nav.Link>
               {
                 user ? (<>
-                  <Nav.Link as={NavLink} to="/manageinventory">Manage Inventory</Nav.Link>
-                  <Nav.Link as={NavLink} to="/myitems">My Items</Nav.Link>
-                  <Nav.Link as={NavLink} to="/additems">Add Items</Nav.Link>
+                  <Nav.Link as={NavLink} to="/dashboard">Dashboard</Nav.Link>
                   <Nav.Link as={NavLink} onClick={handleSignOut} to="/">Signout</Nav.Link>
                 </>) : (<>
                   <Nav.Link as={NavLink} to="/signup">Signup</Nav.Link>

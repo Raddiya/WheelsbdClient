@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Col, Form } from 'react-bootstrap';
 import axios from 'axios';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import auth from '../../Firebase/Firebase.init';
+import auth from '../../Firebase/firebase.init';
 
 
 const AddItems = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import auth from '../../Firebase/Firebase.init';
+import auth from '../../Firebase/firebase.init';
 import myPic from '../../Image/download (2).jpg';
 import './Profile.css';
 

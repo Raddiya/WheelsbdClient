@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Outlet, NavLink } from 'react-router-dom';
 import axios from 'axios';
+import './Dashboard.css';
 
 const Dashboard = () => {
     const [user, setUser] = useState({})
@@ -50,12 +51,12 @@ const Dashboard = () => {
                                 <NavLink className={({ isActive }) =>
                                     isActive ? "link-active link" : "link"
                                 } to='/dashboard/my_items'>My Order</NavLink>
-
+ <NavLink className={({ isActive }) =>
+                                isActive ? "link-active link" : "link"
+                            } to='/dashboard/manageAllUser'>Manage All User</NavLink>
                             </>
                         )
                 }
-
-
 
 
 

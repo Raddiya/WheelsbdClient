@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import MyCard from '../MyCard/MyCard';
 
-const Inventory = () => {
+const Product = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
     axios.get('/products')
@@ -26,4 +26,4 @@ const Inventory = () => {
   );
 };
 
-export default Inventory;
+export default Product;

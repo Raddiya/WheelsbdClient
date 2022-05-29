@@ -1,6 +1,6 @@
 import { Navigate, useLocation } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import auth from '../../../Firebase/Firebase.init'
+import auth from '../../../Firebase/firebase.init'
 import { Spinner } from 'react-bootstrap';
 import { useEffect } from 'react';
 import { toast } from 'react-toastify';

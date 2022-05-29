@@ -5,7 +5,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import './Login.css'
 import axios from "axios";
-import auth from "../../../Firebase/Firebase.init";
+import auth from "../../../Firebase/firebase.init";
 
 
 
