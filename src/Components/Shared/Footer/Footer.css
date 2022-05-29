@@ -1,6 +1,5 @@
-.footer{
-    text-align: center;
-    background-color:black ;
-    color: azure;
-    padding: 10px;
+.footer-part{
+    background:#232A35 ;
+    color: antiquewhite;
+    font-size: 1.3rem;
 }

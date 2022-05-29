@@ -22,8 +22,6 @@ const Review = () => {
                         <th>Email</th>
                         <th>User Name</th>
                         <th>Review </th>
-
-
                     </tr>
                 </thead>
                 <tbody>

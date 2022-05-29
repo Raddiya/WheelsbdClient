@@ -1,11 +1,15 @@
 import React from 'react';
 import './Footer.css';
 
+
 const Footer = () => {
     return (
-        <footer className='mt-auto'>
-            <hr></hr>
-            <p className='footer m-0 p-4'> 2022 Company© Inc. All rights reserved by Phone site BD.</p>
+        <footer className="mt-auto">
+            <div className="footer-part">
+                <p className="text-center mb-0 py-5 ">
+        Final assignment || powered by <img className="img-fluid" src={gymxx} alt="gymxx" />
+                </p>
+            </div>
         </footer>
     );
 };
