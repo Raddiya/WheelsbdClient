@@ -2,9 +2,10 @@ import { useEffect, useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import auth from "../../../Firebase/Firebase.init";
+
 import './Login.css'
 import axios from "axios";
+import auth from "../../../Firebase/Firebase.init";
 
 
 

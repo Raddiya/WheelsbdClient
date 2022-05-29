@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import AddItems from './Components/AddItems/AddItems';
+import AddItems from '../src/Components/AddItems/AddItems';
 import Login from './Components/Auth/Login/Login';
 import Signup from './Components/Auth/Signup/Signup';
 import Home from './Components/Home/Home';
@@ -10,8 +10,8 @@ import MyItems from './Components/MyItems/MyItems';
 import { ToastContainer } from 'react-toastify';
 import Footer from './Components/Shared/Footer/Footer';
 import Header from './Components/Shared/Header/Header';
-import SingleItems from './Components/SingleItems/SingleItems';
-import Auth from '../src/Firebase/Firebase.init';
+// import SingleItems from './Components/SingleItems/SingleItems';
+import Auth from '../src/Firebase/firebase.init';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Notfound from './Components/NotFound/Notfound';
 import RequireAuth from './Components/Auth/RequireAuth/RequireAuth';
@@ -43,7 +43,7 @@ function App() {
           </RequireAuth>}></Route>
           <Route path='manageAllUser' element={<RequireAuth><ManageUser />
           </RequireAuth>}></Route>
-          <Route path='my_items' element={<RequireAuth><MyItems /></RequireAuth>}></Route>
+          <Route path='myitems' element={<RequireAuth><MyItems /></RequireAuth>}></Route>
           <Route index element={
             <RequireAuth><AddItems /></RequireAuth>
           }></Route>
