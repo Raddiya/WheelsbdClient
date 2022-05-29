@@ -20,6 +20,7 @@ import { Route, Routes } from 'react-router-dom';
 import Dashboard from './Components/Dashboard/Dashboard';
 import ManageUser from './Components/ManageUser/ManageUser';
 import ManageAllOrders from './Components/ManageAllOrders/ManageAllOrders';
+import Profile from './Components/Profile/Profile';
 
 function App() {
   return (
