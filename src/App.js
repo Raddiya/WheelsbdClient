@@ -21,6 +21,7 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import ManageUser from './Components/ManageUser/ManageUser';
 import ManageAllOrders from './Components/ManageAllOrders/ManageAllOrders';
 import Profile from './Components/Profile/Profile';
+import Review from './Components/Review/Review';
 
 function App() {
   return (
