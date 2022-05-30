@@ -43,14 +43,14 @@ const Home = () => {
       }
 
       <div className='text-center'>
-        <Link to='/product' className='btn btn-primary'>See all inventory</Link>
+        <Link to='/product' className='btn btn-primary'>See all product</Link>
       </div>
 
       {/* <!-- Ques part start --> */}
       <h2 class="text-center fw-bold m-5">FREQUENTLY ASKED QUESTION</h2>
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
-          <Accordion.Header>What is a Pay Monthly or Contract Phone deal?</Accordion.Header>
+          <Accordion.Header>What is a Pay Monthly or Contract  deal?</Accordion.Header>
           <Accordion.Body>
             A pay monthly deal is where you pay a set amount of money each month for a phone that has a monthly allowance of minutes, texts and data. With pay monthly phones, Normally this ll be over a period of 24 months.
           </Accordion.Body>
@@ -68,7 +68,7 @@ const Home = () => {
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="2">
-          <Accordion.Header>How do Pay Monthly phone contracts work? </Accordion.Header>
+          <Accordion.Header>How do Pay Monthly  contracts work? </Accordion.Header>
           <Accordion.Body>
             We offer 24 month agreements.
             You’ll be charged a fixed monthly fee for:

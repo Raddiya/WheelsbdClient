@@ -24,7 +24,7 @@ const MyCard = (props) => {
           <Card.Text>
             {about}
           </Card.Text>
-          <Link className='btn btn-primary' to={`/singleitems/${_id}`} >Manage Inventory</Link>
+          <Link className='btn btn-primary' to={`/singleitems/${_id}`} >Procced order</Link>
         </Card.Body>
       </Card>
     </div>

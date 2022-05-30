@@ -13,7 +13,7 @@ import MyItems from './Components/MyItems/MyItems';
 import { ToastContainer } from 'react-toastify';
 import Footer from './Components/Shared/Footer/Footer';
 import Header from './Components/Shared/Header/Header';
-// import SingleItems from './Components/SingleItems/SingleItems';
+import SingleItems from './Components/SingleItems/SingleItems';
 import Auth from '../src/Firebase/firebase.init';
 import Notfound from './Components/NotFound/Notfound';
 import RequireAuth from './Components/Auth/RequireAuth/RequireAuth';
@@ -36,6 +36,7 @@ function App() {
         <Route path='/login' element={<Login />} ></Route>
         <Route path='/signup' element={<Signup />} ></Route>
         <Route path='/product' element={<Product />} ></Route>
+        <Route path='/singleitems/:id' element={<SingleItems />} ></Route>
         <Route path='/dashboard' element={<Dashboard />}>
           <Route path='manage_inventory' element={<RequireAuth><ManageInventory />
           </RequireAuth>}></Route>
