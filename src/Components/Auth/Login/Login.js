@@ -114,7 +114,7 @@ const Login = () => {
             if (email) {
                 axios.post('/login', { email })
                     .then(res => {
-                        localStorage.setItem('auth_token', res.data.token)
+                        localStorage.setItem('token', res.data.token)
                         navigate(from);
                     })
             }

@@ -42,14 +42,14 @@ function App() {
           </RequireAuth>}></Route>
           <Route path='review' element={<RequireAuth><Review />
           </RequireAuth>}></Route>
-          <Route path='profile' element={<RequireAuth><Profile />
+          <Route index element={<RequireAuth><Profile />
           </RequireAuth>}></Route>
           <Route path='manage-all-orders' element={<RequireAuth><ManageAllOrders />
           </RequireAuth>}></Route>
           <Route path='manageAllUser' element={<RequireAuth><ManageUser />
           </RequireAuth>}></Route>
-          <Route path='myitems' element={<RequireAuth><MyItems /></RequireAuth>}></Route>
-          <Route index element={
+          <Route path='my_items' element={<RequireAuth><MyItems /></RequireAuth>}></Route>
+          <Route path='additem' element={
             <RequireAuth><AddItems /></RequireAuth>
           }></Route>
         </Route>

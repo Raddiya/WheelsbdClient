@@ -2,8 +2,10 @@ import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useParams } from 'react-router-dom';
 import { toast } from "react-toastify";
+import auth from '../../Firebase/firebase.init';
 // import './SingleItems.css';
 
 const SingleItems = () => {
@@ -19,6 +21,8 @@ const SingleItems = () => {
     }, [])
 
     const { about, supplier, name, quantity, image, price, email } = item;
+
+    const[user]=useAuthState(auth);
 
     useEffect(() => {
         axios.get(`/product/${id}`)
@@ -104,7 +108,7 @@ const SingleItems = () => {
                                         className="form-control"
                                         type="email"
                                         placeholder="Your Email"
-                                        value={email}
+                                        value={user.email}
                                         required
                                         readOnly
                                     />
@@ -147,7 +151,7 @@ const SingleItems = () => {
                                 type="email"
                                 name='email'
                                 placeholder="Your Email"
-                                value={email}
+                                value={user.email}
                                 required
                                 readOnly
                             />

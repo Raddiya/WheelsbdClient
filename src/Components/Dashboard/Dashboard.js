@@ -25,7 +25,7 @@ const Dashboard = () => {
             <div className='sidebar'>
                 <NavLink className={({ isActive }) =>
                     isActive ? "link-active link" : "link"
-                } to='/dashboard/profile'>My Profile</NavLink>
+                } to='/dashboard/'>My Profile</NavLink>
                 {
                     user.role === 'admin' ? (
                         <>
@@ -37,7 +37,7 @@ const Dashboard = () => {
                             } to='/dashboard/manage-all-orders'>Manage All Orders</NavLink>
                             <NavLink className={({ isActive }) =>
                                 isActive ? "link-active link" : "link"
-                            } to='/dashboard/' >Add A Product</NavLink>
+                            } to='/dashboard/additem' >Add A Product</NavLink>
                             <NavLink className={({ isActive }) =>
                                 isActive ? "link-active link" : "link"
                             } to='/dashboard/manage_inventory'>Manage Products</NavLink>

@@ -19,8 +19,8 @@ const Portfolio = () => {
                         <p>
                             I am Bangladeshi web designer and developer focused on Front End
 
-                            Developer. I will make suer clean and user friendly experience. My
-                            passionate about building excellent website and improve about
+                            Developer. I will make clean and user friendly experience. My
+                            passion about building excellent website and improve about
                             building.
                         </p>
                         <button className="btn btn-primary"> Explore me</button>
@@ -53,7 +53,7 @@ const Portfolio = () => {
                                         Address: <span className="fw-bold">Dhaka Bangladesh</span>
                                     </p>
                                     <p>
-                                        Phone: <span className="fw-bold">+88 01950165071</span>
+                                        Phone: <span className="fw-bold">+88 01950165072</span>
                                     </p>
                                     <p>
                                         Email:

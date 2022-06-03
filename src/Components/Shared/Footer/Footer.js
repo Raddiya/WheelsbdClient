@@ -39,7 +39,7 @@ const Footer = () => {
                
               </div>
               <h4>Email: <a className='text-info text-decoration-none' href='mailto:raddiyasultana.612@gmail.com' target='_blank' rel='noreferrer' >raddiyasultana.612@gmail.com</a> </h4>
-              <h4>Phone: <a className='text-info text-decoration-none' href='tel:01950165071' target='_blank' rel='noreferrer'>01950165071</a> </h4>
+              <h4>Phone: <a className='text-info text-decoration-none' href='tel:01950165072' target='_blank' rel='noreferrer'>01950165072</a> </h4>
             </div>
           </Col>
         </Row>
